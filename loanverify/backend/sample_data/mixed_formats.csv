@@ -1,0 +1,21 @@
+Loan_ID,Borrower Name,Loan Amount,Rate (%),Term (Months),Origination Date,Monthly Pmt,Balance,Loan Status,Credit Score,LTV Ratio,Property Type,State
+MF-001,  John Smith  ,350000,4.5,360,2023-01-15,1771.22,340000,Current,750,0.82,Single Family,CA
+MF-002,Jane Doe,280000,3.75,300,06/20/2022,1350.00,265000,Current,720,0.75,Condo,NY
+MF-003,Robert Chen,450000,5.20,360,2021/03/10,2471.33,420000,Late,680,0.90,Single Family,TX
+MF-004,"Alice Johnson",520000,45.0,360,May 1, 2023,23400.00,510000,Late,710,0.88,Single Family,FL
+MF-005,Bob Williams,220000,4.1,240,11-30-2022,1348.67,200000,Current,780,0.70,Townhouse,WA
+MF-006,Charlie Brown,50000,3.5,120,2023.02.14,505.05,48000,Current,700,0.65,Condo,IL
+MF-007,Diana Prince,890000,6.5,360,Aug 22, 2021,5627.25,850000,Defaulted,620,1.15,Single Family,CA
+MF-008,Eve Adams,180000,0,180,20230910,1000.00,170000,Current,690,0.60,Condo,AZ
+MF-009,Frank Castle,310000,7.8,360,2022-04-05,2225.50,290000,Late,650,0.85,Single Family,NJ
+MF-010,Grace Hopper,125000,3.25,120,20 Jul 2023,1221.43,115000,Current,810,0.55,Townhouse,MA
+MF-011,Henry Ford,950000,5.5,360,2021-01-30,5392.15,900000,Current,740,0.95,Multi Family,TX
+MF-012,Iris West,200000,4.8,360,2023-03-15,1500.00,200000,Active,760,0.80,Single Family,OR
+MF-013,Jack Ryan,420000,12.5,240,Dec 1, 2022,3625.00,395000,Late,580,0.92,Single Family,NV
+MF-014,Karen Page,150000,3.0,120,2023-06-10,1449.00,140000,Current,770,0.50,Condo,CO
+MF-015,Leonard Nimoy,2800000,4.2,360,11/20/2020,13715.00,2600000,Current,790,0.78,Multi Family,NY
+MF-016,Monica Geller,175000,999,360,2023-01-05,0,175000,Current,720,0.72,Single Family,PA
+MF-017,Nathan Drake,310000,5.0,360,2022/09/14,1664.00,295000,Paid Off,700,0.80,Single Family,GA
+MF-018,Olivia Pope,440000,4.75,300,22-Apr-2023,2445.00,425000,Current,730,0.88,Single Family,VA
+MF-019,Peter Parker,200000,3.5,240,2022-07-08,1162.00,185000,Current,750,0.65,Condo,CT
+MF-020,Quinn Mallory,160000,-2.0,180,2023.08.30,1120.00,155000,Current,690,0.60,Townhouse,OH

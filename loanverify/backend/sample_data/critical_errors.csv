@@ -1,0 +1,21 @@
+loan_id,borrower_name,loan_amount,interest_rate,term_months,origination_date,monthly_payment,balance,status,credit_score,ltv,type,state
+ERR-001,John Smith,350000,4.5,360,2023-01-15,1771.22,340000,current,750,0.82,Single Family,CA
+ERR-002,,280000,3.75,300,2022-06-20,1350.00,265000,current,720,0.75,Condo,NY
+ERR-003,Robert Chen,-450000,5.2,360,2021-03-10,2471.33,420000,current,680,0.90,Single Family,TX
+ERR-004,Alice Johnson,520000,9999.0,360,2023-05-01,23400.00,510000,late,710,0.88,Single Family,FL
+ERR-005,Bob Williams,0,4.1,240,2022-11-30,1348.67,200000,current,780,0.70,Townhouse,WA
+ERR-006,Charlie Brown,50000,-3.5,120,2023-02-14,505.05,48000,current,700,0.65,Condo,IL
+ERR-007,Diana Prince,890000,6.5,360,,5627.25,850000,defaulted,620,1.15,Single Family,CA
+ERR-008,Eve Adams,180000,0,180,2023-09-10,1000.00,170000,current,690,0.60,Condo,AZ
+ERR-009,,310000,7.8,360,2022-04-05,2225.50,290000,late,650,0.85,Single Family,NJ
+ERR-010,Grace Hopper,125000,3.25,0,2023-07-20,1221.43,115000,current,810,0.55,Townhouse,MA
+ERR-011,Henry Ford,950000,5.5,360,2021-01-30,5392.15,900000,current,740,0.95,Multi Family,TX
+ERR-012,Iris West,200000,4.8,360,2023-03-15,,200000,active,760,0.80,Single Family,OR
+ERR-013,Jack Ryan,420000,50.0,240,2022-12-01,3625.00,395000,late,580,0.92,Single Family,NV
+ERR-014,Karen Page,150000,3.0,120,2023-06-10,1449.00,140000,current,770,0.50,Condo,CO
+ERR-015,Leonard Nimoy,2800000,4.2,360,2020-11-20,13715.00,2600000,current,790,0.78,Multi Family,NY
+ERR-016,Monica Geller,175000,25.0,360,2023-01-05,0,175000,current,720,0.72,Single Family,PA
+ERR-017,Nathan Drake,310000,5.0,360,2022-09-14,1664.00,295000,paid_off,700,0.80,Single Family,GA
+ERR-018,Olivia Pope,,4.75,300,2023-04-22,2445.00,425000,current,730,0.88,Single Family,VA
+ERR-019,Peter Parker,200000,3.5,-240,2022-07-08,1162.00,185000,current,750,0.65,Condo,CT
+ERR-020,Quinn Mallory,160000,500.0,180,2023-08-30,1120.00,155000,current,690,0.60,Townhouse,OH

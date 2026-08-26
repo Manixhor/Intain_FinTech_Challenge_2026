@@ -1,0 +1,21 @@
+loan_id,borrower_name,loan_amount,interest_rate,term_months,origination_date,monthly_payment,balance,status,credit_score,ltv,type,state
+LN-1001,James Anderson,285000,4.25,360,2023-01-15,1401.52,278000,current,762,0.78,Single Family,CA
+LN-1002,Maria Garcia,420000,3.95,300,2022-08-22,2058.30,395000,current,741,0.82,Condo,NY
+LN-1003,Robert Chen,195000,4.50,240,2023-05-10,1235.00,185000,current,728,0.65,Townhouse,TX
+LN-1004,Sarah Johnson,550000,3.75,360,2022-03-18,2548.22,520000,current,789,0.88,Single Family,FL
+LN-1005,David Kim,310000,4.10,300,2023-07-01,1560.00,300000,current,715,0.75,Condo,WA
+LN-1006,Jennifer Lee,275000,4.35,360,2022-11-05,1363.41,265000,current,734,0.72,Single Family,IL
+LN-1007,Michael Brown,480000,3.85,360,2023-02-28,2228.00,465000,current,775,0.85,Single Family,MA
+LN-1008,Emily Davis,165000,4.60,180,2023-09-12,1260.00,158000,current,708,0.58,Townhouse,CO
+LN-1009,Christopher Wilson,340000,4.00,360,2022-06-20,1623.00,325000,current,748,0.80,Single Family,NC
+LN-1010,Amanda Martinez,220000,4.45,240,2023-04-15,1390.00,212000,current,722,0.68,Condo,VA
+LN-1011,Daniel Taylor,620000,3.70,360,2022-01-10,2845.00,590000,current,795,0.90,Single Family,NJ
+LN-1012,Jessica Thomas,180000,4.55,180,2023-08-05,1370.00,175000,current,718,0.62,Townhouse,OH
+LN-1013,Matthew Jackson,395000,4.05,300,2022-09-30,1978.00,380000,current,740,0.83,Single Family,GA
+LN-1014,Ashley White,250000,4.30,360,2023-06-18,1230.00,242000,current,725,0.70,Condo,AZ
+LN-1015,Joshua Harris,445000,3.90,360,2022-04-25,2090.00,430000,current,768,0.86,Single Family,PA
+LN-1016,Michelle Clark,290000,4.20,300,2023-03-08,1440.00,282000,current,732,0.76,Condo,MI
+LN-1017,Andrew Lewis,510000,3.80,360,2022-12-01,2365.00,495000,current,782,0.87,Single Family,TN
+LN-1018,Stephanie Robinson,155000,4.65,180,2023-10-20,1190.00,150000,current,705,0.55,Townhouse,OH
+LN-1019,Brian Walker,370000,4.00,360,2022-07-14,1762.00,358000,current,745,0.81,Single Family,NC
+LN-1020,Lauren Hall,205000,4.40,240,2023-08-28,1290.00,198000,current,720,0.67,Condo,VA

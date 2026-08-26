@@ -1,0 +1,11 @@
+loan_id,borrower_name,loan_amount,interest_rate,status
+MIN-001,John Smith,350000,4.5,current
+MIN-002,Jane Doe,280000,3.75,current
+MIN-003,,450000,5.2,current
+MIN-004,Alice Johnson,520000,45.0,late
+MIN-005,Bob Williams,220000,4.1,current
+MIN-006,Charlie Brown,50000,3.5,current
+MIN-007,Diana Prince,890000,6.5,defaulted
+MIN-008,Eve Adams,180000,0,current
+MIN-009,,310000,7.8,late
+MIN-010,Grace Hopper,125000,3.25,current
