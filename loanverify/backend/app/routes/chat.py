@@ -1,6 +1,6 @@
 """Chat routes — AI copilot chat for follow-up questions about exceptions."""
 
-from typing import List, Dict, Optional
+from typing import List, Dict, Any, Optional
 from pydantic import BaseModel
 
 from fastapi import APIRouter, Depends, HTTPException
@@ -28,7 +28,7 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     reply: str
-    context_used: Dict[str, any]
+    context_used: Dict[str, Any]
 
 
 @router.post("", response_model=ChatResponse)
