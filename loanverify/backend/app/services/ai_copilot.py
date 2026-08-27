@@ -1,18 +1,37 @@
-"""AI Copilot service — generates human-readable explanations and chat for validation exceptions."""
+"""AI Copilot service — Grok AI powered explanations and chat for validation exceptions.
+
+Uses xAI Grok API (OpenAI-compatible):
+- Get free API key: https://console.x.ai -> API Keys
+- Set XAI_API_KEY environment variable
+- Falls back to mock responses if no key is set
+"""
 
 import os
 import json
 from typing import Dict, Any, Optional, List
-from functools import lru_cache
 
 from openai import AsyncOpenAI
 
-# Use environment variable or fallback to a mock mode
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-USE_AI = bool(OPENAI_API_KEY)
+# ── Grok AI Configuration ─────────────────────────
+# Uses xAI Grok API (OpenAI-compatible)
+# Get your FREE API key at: https://console.x.ai
+XAI_API_KEY = os.getenv("XAI_API_KEY", "")
+USE_AI = bool(XAI_API_KEY)
+
+# Available Grok models:
+# - grok-3       (fast, cheap)
+# - grok-3-mini  (faster, cheaper)
+# - grok-4.6     (latest, most capable)
+GROK_MODEL = os.getenv("GROK_MODEL", "grok-3")
 
 if USE_AI:
-    client = AsyncOpenAI(api_key=OPENAI_API_KEY)
+    client = AsyncOpenAI(
+        api_key=XAI_API_KEY,
+        base_url="https://api.x.ai/v1",  # xAI Grok API endpoint
+    )
+    print(f"[LoanVerify] Grok AI enabled — model: {GROK_MODEL}")
+else:
+    print("[LoanVerify] Grok AI disabled — using mock responses. Set XAI_API_KEY to enable.")
 
 # In-memory cache for explanations (keyed by rule_name + actual_value)
 _explanation_cache: Dict[str, str] = {}
@@ -92,7 +111,7 @@ Record context: {json.dumps(record_context, default=str, indent=2)}
 Please explain this issue and suggest a resolution."""
 
             response = await client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=GROK_MODEL,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": user_msg},
@@ -172,7 +191,7 @@ Please answer the reviewer's question based on this context."""
     if USE_AI:
         try:
             response = await client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=GROK_MODEL,
                 messages=full_messages,
                 max_tokens=500,
                 temperature=0.5,
@@ -254,7 +273,7 @@ async def generate_reviewer_summary(
     if USE_AI:
         try:
             response = await client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=GROK_MODEL,
                 messages=[
                     {"role": "system", "content": "You are a data quality analyst writing executive summaries for loan data reviewers."},
                     {"role": "user", "content": REVIEWER_NOTE_PROMPT.format(
